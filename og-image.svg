@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4D4D4"/>
+      <stop offset="100%" stop-color="#ABABAB"/>
+    </linearGradient>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700;900&display=swap');
+      .heading { font-family: 'Be Vietnam Pro', Arial, sans-serif; font-weight: 900; fill: #111111; }
+      .label   { font-family: 'Be Vietnam Pro', Arial, sans-serif; font-weight: 700; fill: #111111; }
+    ]]></style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- ===== HEADING (3 lines) ===== -->
+  <text class="heading" x="600" y="92"  text-anchor="middle" font-size="70">15 ngày yêu lại tiếng Anh</text>
+  <text class="heading" x="600" y="182" text-anchor="middle" font-size="70">Bạn có dám thử lại</text>
+  <text class="heading" x="600" y="272" text-anchor="middle" font-size="70">một lần nữa</text>
+
+  <!-- ===== LEFT BRANCH: THỬ (centered x=300) ===== -->
+  <text class="label" x="300" y="316" text-anchor="middle" font-size="24" letter-spacing="4">THỬ</text>
+
+  <!-- Starting dot -->
+  <circle cx="300" cy="332" r="5" fill="#111111"/>
+
+  <!-- Vertical line down to fork -->
+  <line x1="300" y1="337" x2="300" y2="382" stroke="#111111" stroke-width="2"/>
+
+  <!-- Horizontal bar of fork -->
+  <line x1="180" y1="382" x2="420" y2="382" stroke="#111111" stroke-width="2"/>
+
+  <!-- Left arm down (to checkmark) -->
+  <line x1="180" y1="382" x2="180" y2="443" stroke="#111111" stroke-width="2"/>
+  <polyline points="168,431 180,445 192,431" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Right arm down (to X) -->
+  <line x1="420" y1="382" x2="420" y2="443" stroke="#111111" stroke-width="2"/>
+  <polyline points="408,431 420,445 432,431" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Checkmark -->
+  <text x="180" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" fill="#111111">&#10003;</text>
+  <text class="label" x="180" y="547" text-anchor="middle" font-size="24">90%</text>
+  <text class="label" x="180" y="574" text-anchor="middle" font-size="24" font-weight="400">thành công</text>
+
+  <!-- X mark (right arm of THỬ) -->
+  <text x="420" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" fill="#111111">&#10007;</text>
+
+  <!-- ===== RIGHT BRANCH: KHÔNG THỬ (centered x=860) ===== -->
+  <text class="label" x="860" y="316" text-anchor="middle" font-size="24" letter-spacing="4">KHÔNG THỬ</text>
+
+  <!-- Starting dot -->
+  <circle cx="860" cy="332" r="5" fill="#111111"/>
+
+  <!-- Vertical line down -->
+  <line x1="860" y1="337" x2="860" y2="443" stroke="#111111" stroke-width="2"/>
+  <polyline points="848,431 860,445 872,431" fill="none" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- X mark -->
+  <text x="860" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" fill="#111111">&#10007;</text>
+
+</svg>

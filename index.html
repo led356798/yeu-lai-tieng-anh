@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yêu Lại Tiếng Anh - Từ Nỗi Sợ → Nghe Hiểu → Yêu Lại Tiếng Anh Trong 15 Ngày</title>
+    <meta name="description" content="Khóa học giúp bạn yêu lại tiếng Anh trong 15 ngày. Không từ vựng, không ngữ pháp, không giáo trình. Chỉ 249K. Cam kết hoàn phí 100% nếu không thích.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yeu-lai-tieng-anh-seven.vercel.app/">
+    <meta property="og:title" content="Yêu Lại Tiếng Anh - Từ Nỗi Sợ → Nghe Hiểu → Yêu Lại Tiếng Anh Trong 15 Ngày">
+    <meta property="og:description" content="Từ nỗi sợ → nghe hiểu → yêu lại tiếng Anh. Không từ vựng, không ngữ pháp. Cam kết hoàn phí 100%.">
+    <meta property="og:image" content="https://yeu-lai-tieng-anh-seven.vercel.app/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yêu Lại Tiếng Anh - Từ Nỗi Sợ → Nghe Hiểu → Yêu Lại Tiếng Anh Trong 15 Ngày">
+    <meta name="twitter:description" content="Từ nỗi sợ → nghe hiểu → yêu lại tiếng Anh. Cam kết hoàn phí 100%.">
+    <meta name="twitter:image" content="https://yeu-lai-tieng-anh-seven.vercel.app/og-image.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E63946',
+                        'primary-dark': '#C62828',
+                        secondary: '#F5C242',
+                        'secondary-dark': '#D4A017',
+                        accent: '#F5C242',
+                        gold: '#F5C242',
+                        dark: '#0D1117',
+                        'dark-card': '#1A1F2E',
+                        'dark-soft': '#2D3340',
+                        surface: '#111827',
+                        'surface-warm': '#141B24',
+                        muted: '#9CA3AF',
+                        light: '#E5E7EB',
+                    },
+                    fontFamily: {
+                        sans: ['Be Vietnam Pro', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        html { scroll-behavior: smooth; }
+
+        .sticky-bar { z-index: 100; }
+        .nav-bar { z-index: 90; }
+
+        .gradient-hero {
+            background: linear-gradient(135deg, #0D1117 0%, #111827 40%, #0D1117 100%);
+        }
+
+        .text-gradient-fire {
+            background: linear-gradient(135deg, #F5C242, #E63946);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-green {
+            background: linear-gradient(135deg, #F5C242, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn-cta {
+            background: linear-gradient(135deg, #F5C242 0%, #D4A017 100%);
+            color: #0D1117 !important;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 194, 66, 0.4);
+        }
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(245, 194, 66, 0.5);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #F5C242 0%, #D4A017 100%);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 194, 66, 0.4);
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(245, 194, 66, 0.5);
+        }
+
+        .pain-card {
+            transition: all 0.3s ease;
+            border-top: 4px solid transparent;
+        }
+        .pain-card:nth-child(1) { border-top-color: #E63946; }
+        .pain-card:nth-child(2) { border-top-color: #F5C242; }
+        .pain-card:nth-child(3) { border-top-color: #6366F1; }
+        .pain-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+
+        .stat-card {
+            background: rgba(26, 31, 46, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding-top: 12px;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .countdown-box {
+            background: rgba(0,0,0,0.3);
+            min-width: 48px;
+        }
+
+        .pulse-glow {
+            animation: pulseGlow 2s infinite;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 5px rgba(255, 184, 0, 0.4); }
+            50% { box-shadow: 0 0 20px rgba(255, 184, 0, 0.8); }
+        }
+
+        .float-badge {
+            animation: floatBadge 3s ease-in-out infinite;
+        }
+        @keyframes floatBadge {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        .roadmap-step {
+            position: relative;
+        }
+        .roadmap-step::before {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 60px;
+            bottom: -20px;
+            width: 2px;
+            background: linear-gradient(to bottom, #E63946, #22C55E);
+        }
+        .roadmap-step:last-child::before {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .sticky-bar { font-size: 13px; }
+            .countdown-box { min-width: 36px; padding: 4px 6px; }
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+
+    <!-- ===== NAVIGATION (sticky) ===== -->
+    <nav class="nav-bar fixed top-0 left-0 right-0 bg-dark/95 backdrop-blur-md shadow-sm border-b border-dark-soft" style="z-index:100;">
+        <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-14 md:h-16">
+            <!-- Countdown with labels -->
+            <div class="flex items-center gap-1.5 md:gap-2">
+                <span class="text-primary font-bold text-xs md:text-sm uppercase tracking-wide mr-1 md:mr-2">🔥 Ưu đãi chỉ còn</span>
+                <div class="text-center">
+                    <div class="countdown-box rounded-md px-2 py-1 font-bold text-sm md:text-base text-white">
+                        <span id="countdown-days">00</span>
+                    </div>
+                    <span class="text-[10px] text-muted mt-0.5 block">ngày</span>
+                </div>
+                <span class="font-bold text-muted text-sm mb-3">:</span>
+                <div class="text-center">
+                    <div class="countdown-box rounded-md px-2 py-1 font-bold text-sm md:text-base text-white">
+                        <span id="countdown-hours">00</span>
+                    </div>
+                    <span class="text-[10px] text-muted mt-0.5 block">giờ</span>
+                </div>
+                <span class="font-bold text-muted text-sm mb-3">:</span>
+                <div class="text-center">
+                    <div class="countdown-box rounded-md px-2 py-1 font-bold text-sm md:text-base text-white">
+                        <span id="countdown-minutes">00</span>
+                    </div>
+                    <span class="text-[10px] text-muted mt-0.5 block">phút</span>
+                </div>
+                <span class="font-bold text-muted text-sm mb-3">:</span>
+                <div class="text-center">
+                    <div class="countdown-box rounded-md px-2 py-1 font-bold text-sm md:text-base text-white">
+                        <span id="countdown-seconds">00</span>
+                    </div>
+                    <span class="text-[10px] text-muted mt-0.5 block">giây</span>
+                </div>
+            </div>
+
+            <!-- Right: deadline -->
+            <div class="flex items-center">
+                <span class="text-xs text-muted">Kết thúc sau <strong class="text-primary">8h sáng 10/7</strong></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer for fixed nav -->
+    <div class="h-[56px] md:h-[64px]"></div>
+
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="gradient-hero text-white overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 py-14 md:py-20 text-center">
+
+            <div class="inline-flex items-center gap-2 bg-gold/20 text-gold text-xs md:text-sm font-semibold px-4 py-2 rounded-full mb-6 float-badge">
+                🎁 QUÀ ĐẶC BIỆT CHO 5 NGƯỜI SỚM NHẤT
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-5 max-w-4xl mx-auto">
+                TỪ NỖI SỢ → NGHE HIỂU<br>
+                <span class="text-gradient-fire">→ YÊU LẠI TIẾNG ANH</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-4 max-w-2xl mx-auto">
+                Tất cả trong <strong class="text-white">15 ngày</strong>, dù bạn đã từng thất bại bao nhiêu lần trước đây
+            </p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-2 text-gray-400 text-base md:text-lg mb-8 max-w-xl mx-auto">
+                <span>Không từ vựng.</span>
+                <span class="hidden md:inline">·</span>
+                <span>Không ngữ pháp.</span>
+                <span class="hidden md:inline">·</span>
+                <span>Không giáo trình.</span>
+            </div>
+
+            <a href="#form-dang-ky" class="btn-cta inline-block text-dark font-bold text-base md:text-lg px-10 md:px-14 py-4 md:py-5 rounded-full mb-8">
+                THAM GIA NGAY – 249K →
+            </a>
+
+            <p class="text-gray-500 text-sm mb-10">Ưu đãi đóng lại sau ngày <strong class="text-gray-300">10/06/2026</strong></p>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto">
+                <div class="stat-card rounded-xl p-4 md:p-6 text-center">
+                    <div class="text-2xl md:text-4xl font-extrabold text-primary mb-1">17+</div>
+                    <div class="text-xs md:text-sm text-muted font-medium">Khóa học đã tổ chức</div>
+                </div>
+                <div class="stat-card rounded-xl p-4 md:p-6 text-center">
+                    <div class="text-2xl md:text-4xl font-extrabold text-primary mb-1">90%</div>
+                    <div class="text-xs md:text-sm text-muted font-medium">Học viên thấy tiến bộ vượt bậc</div>
+                </div>
+                <div class="stat-card rounded-xl p-4 md:p-6 text-center">
+                    <div class="text-2xl md:text-4xl font-extrabold text-primary mb-1">100%</div>
+                    <div class="text-xs md:text-sm text-muted font-medium">Cam kết hoàn phí nếu không thích</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== PAIN SECTION (Nỗi Đau) ===== -->
+    <section id="noi-dau" class="bg-surface-warm py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <div class="text-center mb-12 md:mb-16">
+                <span class="text-3xl md:text-4xl mb-4 block">🤔</span>
+                <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Có phải bạn...</p>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+                    Đã Rất Nhiều Lần Hứa Sẽ Học Nghiêm Túc?
+                </h2>
+                <p class="text-muted text-base md:text-lg max-w-xl mx-auto">
+                    Nhưng rồi mọi nỗ lực đều nhanh chóng biến mất chỉ sau vài ngày.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Pain Card 1 -->
+                <div class="pain-card bg-dark-card rounded-2xl p-6 md:p-8 shadow-sm">
+                    <div class="text-4xl mb-4">😰</div>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-3">Học mãi mà không giỏi tiếng Anh</h3>
+                    <p class="text-muted leading-relaxed">
+                        Cố nhồi nhét cách học cũ 12 năm trên trường, 4 năm đại học... Học mãi không tiến bộ, gặp người nước ngoài đứng hình. Mỗi lần mở sách ra là não muốn thoát ly, tay vô thức lướt điện thoại.
+                    </p>
+                </div>
+
+                <!-- Pain Card 2 -->
+                <div class="pain-card bg-dark-card rounded-2xl p-6 md:p-8 shadow-sm">
+                    <div class="text-4xl mb-4">🤯</div>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-3">Học ngữ pháp, phát âm, ghi chép từ vựng khô khan</h3>
+                    <p class="text-muted leading-relaxed">
+                        Cố nhồi nhét hàng tá quy tắc ngữ pháp, nhồi nhét 50 từ vựng mỗi ngày rồi quên. Làm bài tập căng thẳng, áp lực nhưng khi cần nói hay đọc vẫn lắp bắp không hiểu gì.
+                    </p>
+                </div>
+
+                <!-- Pain Card 3 -->
+                <div class="pain-card bg-dark-card rounded-2xl p-6 md:p-8 shadow-sm">
+                    <div class="text-4xl mb-4">😞</div>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-3">Không có kỷ luật, cô đơn</h3>
+                    <p class="text-muted leading-relaxed">
+                        Tự học một mình rất dễ nản lòng và bỏ cuộc. Bạn thiếu một môi trường đồn đốc, một lộ trình rõ ràng để đi dài hạn. Dễ bỏ cuộc vì quá nhàm chán, không ai nhắc, không ai động viên.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-light text-lg md:text-xl font-semibold max-w-2xl mx-auto leading-relaxed">
+                    Nếu bạn thấy mình trong 1 trong 3 điều trên... <br>
+                    <span class="text-primary">thì đây chính xác là điều bạn cần.</span>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== PARADIGM SHIFT (Bí Kíp) ===== -->
+    <section id="bi-kip" class="bg-dark py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <div class="text-center mb-12 md:mb-16">
+                <span class="inline-block bg-secondary/20 text-secondary text-xs md:text-sm font-bold px-4 py-1.5 rounded-full mb-4">💡 BÍ KÍP LÀ GÌ?</span>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+                    Thụ Đắc Ngôn Ngữ — <span class="text-gradient-fire">Học Như Trẻ Con</span>
+                </h2>
+                <p class="text-muted text-base md:text-lg max-w-2xl mx-auto">
+                    Phương pháp dựa trên nghiên cứu của <strong class="text-white">Tiến sĩ Stephen Krashen</strong> (Comprehensible Input) và hàng trăm ngàn người đa ngôn ngữ áp dụng học mọi thứ tiếng.
+                </p>
+            </div>
+
+            <!-- 3 Principles -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
+                <div class="bg-dark-card rounded-2xl p-6 md:p-7 border border-dark-soft">
+                    <div class="w-10 h-10 bg-primary/10 text-primary font-bold rounded-full flex items-center justify-center mb-4">1</div>
+                    <h3 class="text-base md:text-lg font-bold text-white mb-2">Không học ngữ pháp, không nhồi từ vựng</h3>
+                    <p class="text-muted text-sm leading-relaxed">
+                        Trẻ con không học quy tắc trước khi nói. Bạn sẽ hấp thụ từ vựng và cấu trúc tự nhiên thông qua ngữ cảnh câu chuyện.
+                    </p>
+                </div>
+                <div class="bg-dark-card rounded-2xl p-6 md:p-7 border border-dark-soft">
+                    <div class="w-10 h-10 bg-accent/10 text-accent font-bold rounded-full flex items-center justify-center mb-4">2</div>
+                    <h3 class="text-base md:text-lg font-bold text-white mb-2">Đắm chìm vào tài liệu thú vị</h3>
+                    <p class="text-muted text-sm leading-relaxed">
+                        Học qua những câu chuyện hấp dẫn giúp tăng hưng phấn, duy trì thói quen đọc 30-60 phút mỗi ngày không mệt mỏi.
+                    </p>
+                </div>
+                <div class="bg-dark-card rounded-2xl p-6 md:p-7 border border-dark-soft">
+                    <div class="w-10 h-10 bg-secondary/10 text-secondary font-bold rounded-full flex items-center justify-center mb-4">3</div>
+                    <h3 class="text-base md:text-lg font-bold text-white mb-2">Không ép bản thân khi chưa sẵn sàng</h3>
+                    <p class="text-muted text-sm leading-relaxed">
+                        Học nhẹ nhàng, tích lũy đủ lượng (nghe, đọc) trước khi chuyển sang giai đoạn nói (chất đổi).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Old Way vs New Way Comparison -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
+                <!-- Old Way -->
+                <div class="bg-dark-card border border-dark-soft rounded-2xl p-6 md:p-8">
+                    <h3 class="text-lg font-bold text-white mb-5">Cách Học Khô Khan Cũ</h3>
+                    <ul class="space-y-3 text-muted">
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary mt-0.5 flex-shrink-0">❌</span>
+                            <span class="line-through decoration-primary/40">Cày cuốc ngữ pháp phức tạp</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary mt-0.5 flex-shrink-0">❌</span>
+                            <span class="line-through decoration-primary/40">Nhồi nhét 50 từ vựng mỗi ngày rồi quên</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary mt-0.5 flex-shrink-0">❌</span>
+                            <span class="line-through decoration-primary/40">Làm bài tập căng thẳng, áp lực</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary mt-0.5 flex-shrink-0">❌</span>
+                            <span class="line-through decoration-primary/40">Dễ bỏ cuộc vì quá nhàm chán</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- New Way -->
+                <div class="bg-dark-card border-2 border-secondary/30 rounded-2xl p-6 md:p-8 relative">
+                    <div class="absolute -top-3 right-4 bg-secondary text-dark text-xs font-bold px-3 py-1 rounded-full">PHƯƠNG PHÁP MỚI</div>
+                    <h3 class="text-lg font-bold text-white mb-5">Thụ Đắc Qua Tài Liệu Thú Vị</h3>
+                    <ul class="space-y-3 text-light">
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✅</span>
+                            <span>Hấp thụ từ vựng, ngữ pháp, phát âm tự nhiên qua ngữ cảnh</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✅</span>
+                            <span>Nghe hiểu tự nhiên không cần nỗ lực</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✅</span>
+                            <span>Vừa học vừa giải trí thoải mái, "enjoy"</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✅</span>
+                            <span>Xây dựng thói quen học mỗi ngày</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-dark-card border border-dark-soft rounded-2xl p-6 md:p-8 text-center text-white">
+                <p class="text-lg md:text-xl font-semibold leading-relaxed max-w-2xl mx-auto">
+                    Bạn không cần "giỏi" hơn. Bạn cần một <span class="text-gradient-fire font-bold">cách tiếp cận đúng</span> – và một môi trường giúp bạn <span class="text-gradient-green font-bold">không bỏ cuộc</span>.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== MOTIVATION / SOCIAL PROOF BRIDGE ===== -->
+    <section class="bg-surface-warm py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+                    VẬY ĐIỀU GÌ ĐÃ THAY ĐỔI <br class="hidden md:block">
+                    NHỮNG NGƯỜI TỪNG <span class="text-gradient-fire">GIỐNG BẠN</span>?
+                </h2>
+                <p class="text-muted text-base md:text-lg max-w-2xl mx-auto mb-2">
+                    Họ tham gia vào <strong class="text-white">THỬ THÁCH 15 NGÀY – YÊU LẠI TIẾNG ANH.</strong>
+                </p>
+                <p class="text-muted text-base max-w-2xl mx-auto">
+                    Đây là một hành trình ngắn, vừa đủ để bạn không mất động lực giữa chừng. Chỉ 15 ngày thôi, nhưng bạn sẽ thật sự nhìn thấy sự thay đổi. Và tuyệt với hơn cả: <strong class="text-primary">90% người tham gia đều về đích.</strong>
+                </p>
+            </div>
+
+            <!-- Motivation Circles -->
+            <div class="grid grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto mb-10 items-end">
+                <div class="text-center">
+                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 rounded-full bg-primary/30"></div>
+                    <p class="text-sm text-muted font-medium">Động lực khi làm <br><strong class="text-white">một mình</strong></p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 md:w-28 md:h-28 mx-auto mb-3 rounded-full bg-primary/60"></div>
+                    <p class="text-sm text-muted font-medium">Động lực khi có <br><strong class="text-white">cộng đồng</strong></p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-3 rounded-full bg-primary"></div>
+                    <p class="text-sm text-muted font-medium">Động lực khi có <br><strong class="text-white">phương pháp thú vị + cộng đồng + người hướng dẫn</strong></p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#form-dang-ky" class="btn-cta inline-block text-dark font-bold text-base md:text-lg px-10 md:px-14 py-4 md:py-5 rounded-full">
+                    Tham Gia Ngay Tại Đây →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== BÍ MẬT THÀNH CÔNG (4 Pillars) ===== -->
+    <section id="lo-trinh" class="bg-surface py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <div class="text-center mb-12 md:mb-16">
+                <span class="text-3xl md:text-4xl mb-4 block">🔑</span>
+                <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Bí mật thành công nằm ở đâu?</p>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight">
+                    4 Yếu Tố Giúp <span class="text-gradient-fire">90% Học Viên</span> Về Đích
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <!-- Pillar 1 -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8 shadow-sm border border-dark-soft">
+                    <div class="text-3xl mb-3">🧒</div>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-3">Phương Pháp "Như Trẻ Con" – Học Mà Như Chơi</h3>
+                    <p class="text-muted text-sm md:text-base leading-relaxed">
+                        Hấp thụ tiếng Anh một cách tự nhiên qua "đầu vào vừa sức". Không cần ép nhớ từ vựng hay nhồi nhét ngữ pháp. Bạn sẽ dần dần nghe và hiểu rõ từng từ một. Nhẹ nhàng không áp lực qua tài liệu siêu thú vị.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8 shadow-sm border border-dark-soft">
+                    <div class="text-3xl mb-3">👥</div>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-3">Nhóm Đồng Hành 15 Ngày</h3>
+                    <p class="text-muted text-sm md:text-base leading-relaxed">
+                        Bạn không hề đơn độc trên hành trình này. Có cộng đồng học cùng, cùng giữ trách nhiệm và chia sẻ kinh nghiệm. Một mình thì dễ bỏ cuộc nhưng có nhóm đồng hành bạn sẽ đi nhanh hơn và xa hơn.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8 shadow-sm border border-dark-soft">
+                    <div class="text-3xl mb-3">👤</div>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-3">Người Hướng Dẫn Tận Tâm</h3>
+                    <p class="text-muted text-sm md:text-base leading-relaxed">
+                        Anh Phát, người đã từng mất gốc và sợ tiếng Anh, sẽ thấu hiểu mọi khó khăn của bạn. Anh sẽ đồng hành, giải đáp mọi thắc mắc và hướng dẫn bạn từng bước. Lộ trình rõ ràng, không còn mông lung.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8 shadow-sm border border-dark-soft">
+                    <div class="text-3xl mb-3">📋</div>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-3">Lộ Trình Cá Nhân Hóa</h3>
+                    <p class="text-muted text-sm md:text-base leading-relaxed">
+                        Tài liệu được thiết kế phù hợp với từng trình độ. Dù bạn học nhanh hay chậm, đều có lộ trình riêng. Không áp lực khi phải học nhanh theo người khác. Tài liệu thú vị khiến bạn chìm đắm vào nó.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== SAU 15 NGÀY ===== -->
+    <section class="bg-dark py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-4">
+
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+                    Sau 15 Ngày Bạn Sẽ <span class="text-gradient-fire">Nhận Lại Điều Gì?</span>
+                </h2>
+                <p class="text-muted text-base md:text-lg max-w-2xl mx-auto">
+                    15 ngày không giúp bạn trở thành cao thủ tiếng Anh. Nhưng 15 ngày sẽ đủ để bạn <strong class="text-white">yêu lại tiếng Anh</strong> và rồi bạn sẽ sớm chinh phục được nó thôi.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Benefit 1 -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8">
+                    <div class="flex items-start gap-4">
+                        <span class="text-3xl flex-shrink-0">📖</span>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold text-white mb-3">Bạn đọc – và thấy tiếng Anh không còn là nỗi ám ảnh.</h3>
+                            <p class="text-muted leading-relaxed mb-3">
+                                Bạn sẽ đọc và <strong class="text-white">hiểu rõ ràng</strong> được ít nhất 100 trang tiếng Anh. Nếu bạn học nhanh và siêng có thể đọc <strong class="text-white">xong 1 cuốn sách tiếng Anh</strong> dày cộm.
+                            </p>
+                            <p class="text-muted leading-relaxed">
+                                Điều đó nghe có vẻ khó tin nhưng gần như <strong class="text-primary">90% thành viên</strong> khi tham gia thử thách đã làm được.
+                            </p>
+                            <p class="text-light italic mt-3 text-sm md:text-base">
+                                "Lâu lắm rồi mình mới thấy việc đọc tiếng Anh lại... vui đến thế, nhẹ nhàng đến thế."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8">
+                    <div class="flex items-start gap-4">
+                        <span class="text-3xl flex-shrink-0">🎧</span>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold text-white mb-3">Nghe hiểu nội dung đơn giản chỉ sau 15 ngày</h3>
+                            <p class="text-muted leading-relaxed">
+                                Từ việc không nghe nổi 3 từ liền mạch, bạn bắt đầu nhận ra: <strong class="text-white">"Ủa, mình hiểu cái đoạn này nói gì rồi nè!"</strong> Nghe hiểu như tiếng Việt mà không bối rối, không khó khăn, áp lực. Cảm giác ấy mới tuyệt vời làm sao.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8">
+                    <div class="flex items-start gap-4">
+                        <span class="text-3xl flex-shrink-0">🧠</span>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold text-white mb-3">Bạn tạo được nhịp học đều đặn – không cần ép bản thân.</h3>
+                            <p class="text-muted leading-relaxed">
+                                Không phải kỷ luật sắt thép. Không phải học 2 tiếng mỗi ngày. Chỉ cần 30 phút – đúng hướng dẫn – và bạn sẽ <strong class="text-white">bắt đầu tạo thói quen học mà không bị chán.</strong> Mỗi ngày bạn học không vì "phải làm", mà vì "muốn làm".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8">
+                    <div class="flex items-start gap-4">
+                        <span class="text-3xl flex-shrink-0">💡</span>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold text-white mb-3">Bạn bắt đầu tin: "Mình học được tiếng Anh."</h3>
+                            <p class="text-muted leading-relaxed mb-3">
+                                Đây là lời chia sẻ nhiều nhất sau thử thách: <em class="text-light">"Em cứ tưởng mình không học nổi nữa. Nhưng giờ em thấy, à... vẫn còn cách dành cho mình."</em>
+                            </p>
+                            <p class="text-muted leading-relaxed">
+                                Bạn có thể chưa giỏi. Nhưng bạn <strong class="text-white">hết ghét tiếng Anh.</strong> Bạn không còn né tránh nó nữa. Và bạn tin tưởng vào bản thân mình sẽ chinh phục được tiếng Anh trong tương lai.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== SOCIAL PROOF ===== -->
+    <section class="bg-surface-warm py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <div class="text-center mb-12 md:mb-16">
+                <span class="text-3xl md:text-4xl mb-4 block">🌟</span>
+                <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Học viên nói gì?</p>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+                    Hàng Trăm Người Đã Thay Đổi. <br class="hidden md:block">
+                    <span class="text-gradient-fire">Bạn Sẽ Là Người Tiếp Theo.</span>
+                </h2>
+            </div>
+
+            <!-- YouTube Testimonials - All Videos -->
+            <div class="bg-dark-card rounded-2xl p-6 md:p-8 mb-8">
+                <p class="text-muted mb-5 text-sm uppercase tracking-wider font-semibold text-center">🎬 Video chia sẻ từ học viên</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <div class="aspect-video rounded-xl overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rHnR3yl3TPU" title="Review học viên" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" class="w-full h-full rounded-xl"></iframe>
+                    </div>
+                    <div class="aspect-video rounded-xl overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Axa0PV59sLU" title="Review học viên" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" class="w-full h-full rounded-xl"></iframe>
+                    </div>
+                    <div class="aspect-video rounded-xl overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6XEhtFOLjBw" title="Review học viên" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" class="w-full h-full rounded-xl"></iframe>
+                    </div>
+                    <div class="aspect-video rounded-xl overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kELZRLpuX6E" title="Review học viên" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" class="w-full h-full rounded-xl"></iframe>
+                    </div>
+                    <div class="aspect-video rounded-xl overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/72xpzGtfDGE" title="Review học viên" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" class="w-full h-full rounded-xl"></iframe>
+                    </div>
+                    <div class="aspect-video rounded-xl overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sZwEJbmOjLo" title="Review học viên" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" class="w-full h-full rounded-xl"></iframe>
+                    </div>
+                    <div class="aspect-video rounded-xl overflow-hidden md:col-span-2 max-w-xl mx-auto w-full">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fFbC_Hnj7NA" title="Review học viên" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" class="w-full h-full rounded-xl"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Photo -->
+            <div class="bg-dark-card rounded-2xl p-6 md:p-8 mb-8">
+                <p class="text-muted mb-4 text-sm uppercase tracking-wider font-semibold text-center">👥 Cộng đồng học viên "Yêu Lại Tiếng Anh"</p>
+                <img src="images/received_1241075148082668.png" alt="Cộng đồng học viên Yêu Lại Tiếng Anh trên Zoom" class="w-full rounded-xl" loading="lazy">
+            </div>
+
+            <!-- Photo Reviews - ALL images -->
+            <div class="bg-surface rounded-2xl p-6 md:p-8">
+                <p class="text-muted mb-5 text-sm uppercase tracking-wider font-semibold text-center">💬 Chia sẻ thật từ học viên</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+                    <img src="images/IMG_20251205_202910.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251031_195348.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251105_200520.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251004_113956.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251004_113959.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251004_114000.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251004_114002.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251004_114004.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251004_114007.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251005_191443.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251105_200510.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251105_200512.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251105_200513.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251105_200515.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251105_200517.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251105_200522.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251105_200523.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202904.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202906.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202907.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202908.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202911.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202912.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202914.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202916.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202918.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_202919.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251205_203508.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251206_202528.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251214_201254.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                    <img src="images/IMG_20251214_201257.jpg" alt="Review học viên" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition-transform cursor-pointer" loading="lazy">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== QUALIFICATION SECTION ===== -->
+    <section class="bg-dark text-white py-16 md:py-24">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-extrabold leading-tight mb-8">
+                Nếu bạn đang gật đầu với bất kỳ điều nào sau đây...
+            </h2>
+
+            <div class="text-left space-y-4 mb-10 max-w-xl mx-auto">
+                <div class="flex items-start gap-3">
+                    <span class="text-gold text-lg mt-0.5">✦</span>
+                    <span class="text-gray-300">"Mình đã thử học tiếng Anh nhiều lần rồi mà lần nào cũng bỏ ngang"</span>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-gold text-lg mt-0.5">✦</span>
+                    <span class="text-gray-300">"Mỗi lần nghe người ta nói tiếng Anh là mình tự ti, muốn trốn"</span>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-gold text-lg mt-0.5">✦</span>
+                    <span class="text-gray-300">"Mình biết tiếng Anh quan trọng nhưng không biết bắt đầu từ đâu"</span>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-gold text-lg mt-0.5">✦</span>
+                    <span class="text-gray-300">"Mình sợ mình quá già / quá muộn để học lại tiếng Anh"</span>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-gold text-lg mt-0.5">✦</span>
+                    <span class="text-gray-300">"Mình muốn một cộng đồng để cùng học, cùng động viên nhau"</span>
+                </div>
+            </div>
+
+            <p class="text-xl md:text-2xl font-bold">
+                ...thì <span class="text-gradient-fire">Yêu Lại Tiếng Anh</span> được tạo ra chính xác cho bạn.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ===== FOUNDERS / TEAM ===== -->
+    <section class="bg-surface py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <div class="text-center mb-12 md:mb-16">
+                <span class="text-3xl md:text-4xl mb-4 block">💪</span>
+                <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Ai sẽ giúp bạn trong hành trình này?</p>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight">
+                    Đội Ngũ Đồng Hành Cùng Bạn
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-10">
+                <!-- Dung Lê -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8 shadow-sm border border-dark-soft">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="images/dung-le.jpg" alt="Dung Lê" class="w-14 h-14 rounded-full object-cover border-2 border-primary/30">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Dung Lê</h3>
+                            <p class="text-primary text-sm font-semibold">Founder</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-muted text-sm leading-relaxed">
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✓</span>
+                            <span>Tổ chức khoảng 50 thử thách thành công (viết, thói quen, tiếng Anh)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✓</span>
+                            <span>Sáng lập nhóm "Hành trình viết" 50.000+ thành viên</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✓</span>
+                            <span>Co-Founder 10X English Mastermind</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✓</span>
+                            <span>Từng đau khổ với tiếng Anh hàng chục năm, giờ nói chuyện tự tin với người nước ngoài</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Phát Nguyễn -->
+                <div class="bg-dark-card rounded-2xl p-6 md:p-8 shadow-sm border border-dark-soft">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="images/a phát.jpg" alt="Phát Nguyễn" class="w-14 h-14 rounded-full object-cover border-2 border-accent/30">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Phát Nguyễn</h3>
+                            <p class="text-accent text-sm font-semibold">Co-Founder, Người hướng dẫn chính</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-muted text-sm leading-relaxed">
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✓</span>
+                            <span>Làm cộng đồng từ 2014, Founder Hội học sinh tự học online</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✓</span>
+                            <span>Founder 10X English Mastermind</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✓</span>
+                            <span>Nghiên cứu sâu phương pháp từ những người đa ngôn ngữ</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5 flex-shrink-0">✓</span>
+                            <span>Yêu thích học tập, phát triển bản thân hơn 10 năm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Support Team -->
+            <div class="bg-dark-card rounded-2xl p-6 md:p-8 border border-dark-soft">
+                <h3 class="text-lg font-bold text-white mb-2 text-center">Đội ngũ hỗ trợ tình nguyện</h3>
+                <p class="text-muted text-sm text-center mb-6">Ở đây đều là những người đau khổ với tiếng Anh và đã từng bước vượt qua nó. Ở lại hỗ trợ vì yêu quý nhóm.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+                    <div class="bg-surface rounded-xl p-4">
+                        <p class="font-semibold text-white text-sm mb-1">Duy Minh <span class="text-xs text-muted font-normal">– chàng trai dấu mặt</span></p>
+                        <p class="text-xs text-muted leading-relaxed">Nghe hiểu <strong class="text-secondary">740 trang trong 15 ngày</strong>. Sau hơn 4 tháng đọc cuốn 1 Harry Potter. Yêu quý nhóm tiếng Anh nên ở lại hỗ trợ mọi người.</p>
+                    </div>
+                    <div class="bg-surface rounded-xl p-4">
+                        <p class="font-semibold text-white text-sm mb-1">Hoà Bình</p>
+                        <p class="text-xs text-muted leading-relaxed"><strong class="text-secondary">840 trang trong 15 ngày</strong>. Yêu quý nhóm nên ở lại hỗ trợ.</p>
+                    </div>
+                    <div class="bg-surface rounded-xl p-4">
+                        <p class="font-semibold text-white text-sm mb-1">Thu <span class="text-xs text-muted font-normal">– TikTok</span></p>
+                        <p class="text-xs text-muted leading-relaxed">Yêu quý nhóm nên ở lại hỗ trợ.</p>
+                    </div>
+                    <div class="bg-surface rounded-xl p-4">
+                        <p class="font-semibold text-white text-sm mb-1">Hà My <span class="text-xs text-muted font-normal">– trợ lý kỷ luật</span></p>
+                        <p class="text-xs text-muted leading-relaxed">Dí mọi người học mỗi ngày. Không ai được phép lười!</p>
+                    </div>
+                </div>
+                <p class="text-center text-sm text-muted italic">Và một vài nhân vật bí ẩn khác... Ở lại hỗ trợ vì yêu quý nhóm.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== OFFER SECTION (Ưu Đãi) ===== -->
+    <section id="uu-dai" class="bg-dark py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-4">
+
+            <div class="text-center mb-12 md:mb-16">
+                <span class="text-3xl md:text-4xl mb-4 block">🎁</span>
+                <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Những gì bạn nhận được</p>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+                    Mọi Công Cụ Cần Thiết Để Bạn Bắt Đầu Lại
+                </h2>
+                <p class="text-muted text-base">Hành trình học tiếng Anh hứng thú hơn bao giờ hết.</p>
+            </div>
+
+            <div class="bg-surface rounded-3xl shadow-lg overflow-hidden">
+                <div class="p-6 md:p-10">
+
+                    <!-- Offer Items -->
+                    <div class="space-y-5 mb-10">
+                        <div class="flex items-start gap-4 bg-dark-card rounded-xl p-4 md:p-5 border border-dark-soft">
+                            <span class="text-2xl flex-shrink-0">👥</span>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-white">Nhóm học đồng hành 15 ngày</h4>
+                                <p class="text-muted text-sm">Môi trường học tập kỷ luật, có team hỗ trợ nhắc nhở</p>
+                            </div>
+                            <span class="text-muted text-sm line-through whitespace-nowrap">500.000đ</span>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-dark-card rounded-xl p-4 md:p-5 border border-dark-soft">
+                            <span class="text-2xl flex-shrink-0">👤</span>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-white">Người hướng dẫn kèm cặp & giải đáp</h4>
+                                <p class="text-muted text-sm">Sửa lỗi sai, định hướng phương pháp học chuẩn xác</p>
+                            </div>
+                            <span class="text-muted text-sm line-through whitespace-nowrap">1.000.000đ</span>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-dark-card rounded-xl p-4 md:p-5 border border-dark-soft">
+                            <span class="text-2xl flex-shrink-0">📚</span>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-white">Bộ tài liệu tiếng Anh từ người bản xứ</h4>
+                                <p class="text-muted text-sm">Phù hợp trình độ, thú vị, dễ hiểu</p>
+                            </div>
+                            <span class="text-muted text-sm line-through whitespace-nowrap">1.000.000đ</span>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-dark-card rounded-xl p-4 md:p-5 border border-dark-soft">
+                            <span class="text-2xl flex-shrink-0">📕</span>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-white">Ebook "Tự học tiếng Anh thành tài"</h4>
+                                <p class="text-muted text-sm">Bí quyết xây dựng nền tảng từ mất gốc lên lưu loát</p>
+                            </div>
+                            <span class="text-muted text-sm line-through whitespace-nowrap">500.000đ</span>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-dark-card rounded-xl p-4 md:p-5 border border-dark-soft">
+                            <span class="text-2xl flex-shrink-0">📅</span>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-white">Habit Tracker rèn luyện thói quen học tập</h4>
+                                <p class="text-muted text-sm">Công cụ theo dõi tiến trình trực quan mỗi ngày</p>
+                            </div>
+                            <span class="text-muted text-sm line-through whitespace-nowrap">200.000đ</span>
+                        </div>
+                    </div>
+
+                    <!-- Value Anchor -->
+                    <div class="bg-dark rounded-2xl p-6 md:p-8 text-center text-white mb-8">
+                        <p class="text-sm text-gray-400 mb-1">Tổng giá trị thực tế:</p>
+                        <p class="text-2xl md:text-3xl font-bold line-through text-gray-400 mb-3">3.200.000đ</p>
+                        <p class="text-sm text-gold mb-2 uppercase font-semibold tracking-wider">Giá ưu đãi hôm nay</p>
+                        <p class="text-5xl md:text-6xl font-extrabold text-white mb-3">249.000<span class="text-2xl">đ</span></p>
+                        <p class="text-gray-400 text-sm">Chỉ khoảng 16.600đ/ngày – rẻ hơn 1 ly trà sữa</p>
+                    </div>
+
+                    <!-- Bonus for first 5 -->
+                    <div class="bg-gold/10 border-2 border-gold/30 rounded-2xl p-5 md:p-6 mb-8">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-2xl">🎁</span>
+                            <span class="bg-gold text-dark text-xs font-bold px-3 py-1 rounded-full">CHỈ CHO 5 NGƯỜI SỚM NHẤT</span>
+                        </div>
+                        <p class="text-light text-sm font-medium">
+                            5 bạn đăng ký sớm nhất nhận thêm <strong class="text-white">bonus sách đặc biệt</strong>. Sau 5 người đầu tiên, giá sẽ tăng.
+                        </p>
+                    </div>
+
+                    <!-- What you get summary -->
+                    <div class="space-y-2 mb-8 max-w-md mx-auto">
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="text-secondary">✓</span>
+                            <span class="text-light">Truy cập toàn bộ tài liệu vĩnh viễn</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="text-secondary">✓</span>
+                            <span class="text-light">Tham gia nhóm kín cùng 100+ đồng đội</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="text-secondary">✓</span>
+                            <span class="text-light">Quyền lợi giải đáp 1-1 trong 15 ngày</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div id="dang-ky" class="text-center">
+                        <a href="#form-dang-ky" class="btn-cta inline-block text-dark font-bold text-lg md:text-xl px-12 md:px-16 py-4 md:py-5 rounded-full mb-4 pulse-glow">
+                            🚀 ĐĂNG KÝ NGAY – 249.000đ →
+                        </a>
+                        <p class="text-muted text-xs">Ưu đãi đóng lại sau ngày <strong>10/06/2026</strong></p>
+                    </div>
+                </div>
+
+                <!-- Guarantee -->
+                <div class="bg-dark-card border-t-2 border-secondary/20 p-6 md:p-10">
+                    <div class="flex items-start gap-4 max-w-xl mx-auto">
+                        <span class="text-4xl flex-shrink-0">🛡️</span>
+                        <div>
+                            <h4 class="text-lg font-bold text-white mb-2">Cam Kết Hoàn Phí 100%</h4>
+                            <p class="text-muted text-sm leading-relaxed">
+                                Nếu bạn thấy giá trị nhận được không gấp 10 lần học phí, hoặc cảm thấy không phù hợp, chúng mình sẽ hoàn phí 100% không lý do. Bạn không có gì để mất, chỉ có cơ hội để được.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== REGISTRATION FORM (nổi bật, trước FAQ) ===== -->
+    <section id="form-dang-ky" class="py-16 md:py-24 relative" style="background: linear-gradient(135deg, #1A1F2E 0%, #0D1117 50%, #1A1F2E 100%);">
+        <!-- Glow effect -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true">
+            <div class="w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-2xl mx-auto px-4 relative z-10">
+
+            <div class="text-center mb-8">
+                <span class="inline-block bg-secondary/20 text-secondary text-xs md:text-sm font-bold px-4 py-1.5 rounded-full mb-4">🚀 ĐĂNG KÝ NGAY</span>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white mb-2">Đăng Ký Tham Gia Thử Thách</h2>
+                <p class="text-muted text-sm">Vui lòng điền thông tin chính xác dưới đây để nhận tài liệu học tập.</p>
+            </div>
+
+            <div class="bg-dark-card rounded-3xl shadow-2xl p-6 md:p-10 border-2 border-secondary/20">
+                <form id="registration-form" class="space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-light mb-1.5">Bạn tên gì nè? <span class="text-primary">*</span></label>
+                            <input type="text" name="hoTen" required placeholder="Họ và tên của bạn" class="w-full px-4 py-3 border border-dark-soft bg-surface text-light rounded-xl text-sm focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all placeholder-muted">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-light mb-1.5">Số điện thoại <span class="text-primary">*</span></label>
+                            <input type="tel" name="sdt" required placeholder="Số điện thoại của bạn" class="w-full px-4 py-3 border border-dark-soft bg-surface text-light rounded-xl text-sm focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all placeholder-muted">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-light mb-1.5">Link Facebook cá nhân của bạn <span class="text-primary">*</span></label>
+                        <input type="url" name="facebook" required placeholder="https://facebook.com/username" class="w-full px-4 py-3 border border-dark-soft bg-surface text-light rounded-xl text-sm focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all placeholder-muted">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-light mb-1.5">Tại sao bạn muốn học tiếng Anh, mục tiêu của bạn là gì? <span class="text-primary">*</span></label>
+                        <textarea name="mucTieu" required rows="3" placeholder="Chia sẻ mục tiêu của bạn..." class="w-full px-4 py-3 border border-dark-soft bg-surface text-light rounded-xl text-sm focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all resize-none placeholder-muted"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-light mb-1.5">Trước giờ bạn đã học tiếng Anh như thế nào? <span class="text-primary">*</span></label>
+                        <textarea name="trinhDo" required rows="3" placeholder="Ví dụ: Mất gốc hoàn toàn, học ngữ pháp ở trường rồi bỏ..." class="w-full px-4 py-3 border border-dark-soft bg-surface text-light rounded-xl text-sm focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all resize-none placeholder-muted"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-light mb-1.5">Bạn biết đến thử thách từ đâu? <span class="text-muted">(Có thể chọn nhiều)</span></label>
+                        <div class="space-y-2 mt-2">
+                            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" name="nguon" value="Facebook Dung Lê" class="w-4 h-4 rounded border-dark-soft bg-surface text-primary focus:ring-primary/20"><span class="text-sm text-light">Facebook Dung Lê</span></label>
+                            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" name="nguon" value="Facebook Phát Nguyễn" class="w-4 h-4 rounded border-dark-soft bg-surface text-primary focus:ring-primary/20"><span class="text-sm text-light">Facebook Phát Nguyễn</span></label>
+                            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" name="nguon" value="Tiktok me.onpaper" class="w-4 h-4 rounded border-dark-soft bg-surface text-primary focus:ring-primary/20"><span class="text-sm text-light">Tiktok me.onpaper</span></label>
+                            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" name="nguon" value="Tiktok Học tiếng Anh mỗi ngày" class="w-4 h-4 rounded border-dark-soft bg-surface text-primary focus:ring-primary/20"><span class="text-sm text-light">Tiktok Học tiếng Anh mỗi ngày</span></label>
+                            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" name="nguon" value="Nguồn khác" class="w-4 h-4 rounded border-dark-soft bg-surface text-primary focus:ring-primary/20"><span class="text-sm text-light">Nguồn khác</span></label>
+                        </div>
+                    </div>
+
+                    <div class="bg-surface rounded-xl p-4">
+                        <label class="flex items-start gap-3 cursor-pointer">
+                            <input type="checkbox" name="dongY" required class="w-5 h-5 rounded border-dark-soft bg-surface text-primary focus:ring-primary/20 mt-0.5">
+                            <span class="text-sm text-light font-medium">Đọc kỹ quyền lợi & đồng ý đăng ký thử thách (Lệ phí: 249.000đ) <span class="text-primary">*</span></span>
+                        </label>
+                    </div>
+
+                    <div id="form-success" class="hidden bg-dark-card border-2 border-secondary/30 rounded-2xl p-6 md:p-8">
+                        <div class="text-center mb-6">
+                            <span class="text-5xl block mb-3">🎉</span>
+                            <p class="text-secondary font-extrabold text-2xl mb-3">CHÚC MỪNG BẠN ĐÃ ĐĂNG KÝ THÀNH CÔNG.</p>
+                            <p class="text-light text-base leading-relaxed mb-2">
+                                Chào mừng bạn đến với chuyến tàu một chiều không trở lại đưa bạn đến với giấc mơ tiếng Anh.
+                            </p>
+                            <p class="text-light text-base leading-relaxed mb-4">
+                                Hãy kiên trì và sớm chinh phục tiếng Anh nhé.
+                            </p>
+                            <p class="text-muted text-sm leading-relaxed">
+                                Nhớ nhắn tin với <a href="https://www.facebook.com/dungbi0310" target="_blank" class="text-secondary font-semibold underline hover:text-secondary/80">Dung Le</a> hoặc <a href="https://www.facebook.com/profile.php?id=100022468403426" target="_blank" class="text-secondary font-semibold underline hover:text-secondary/80">Phát Nguyễn</a> để được thêm vào nhóm học sớm nhất nhé.
+                            </p>
+                        </div>
+
+                        <!-- QR VietQR -->
+                        <div class="bg-white rounded-2xl p-5 md:p-6 max-w-sm mx-auto mb-5">
+                            <div class="text-center">
+                                <img id="qr-payment" src="" alt="QR Thanh toán VietQR" class="w-full max-w-[280px] mx-auto rounded-xl">
+                            </div>
+                        </div>
+
+                        <div class="bg-surface rounded-xl p-4">
+                            <p class="text-light text-sm font-semibold mb-2">Nội dung chuyển khoản:</p>
+                            <div class="flex items-center gap-2">
+                                <code id="transfer-content" class="bg-dark text-secondary px-3 py-2 rounded-lg text-sm font-mono flex-1">YLTA [Họ tên] [4 số cuối SĐT]</code>
+                                <button onclick="copyTransferContent()" class="bg-secondary/20 text-secondary text-xs font-bold px-3 py-2 rounded-lg hover:bg-secondary/30 transition-colors whitespace-nowrap">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="form-error" class="hidden bg-primary/20 border border-primary/30 rounded-xl p-4 text-center">
+                        <p class="text-primary font-semibold text-sm">Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ qua Facebook.</p>
+                    </div>
+
+                    <button type="submit" class="w-full font-bold text-lg md:text-xl py-4 md:py-5 rounded-full transition-all btn-cta pulse-glow">
+                        🚀 GỬI ĐĂNG KÝ & NHẬN TÀI LIỆU
+                    </button>
+
+                    <p class="text-center text-xs text-muted">🔒 Thông tin của bạn được bảo mật tuyệt đối. 🛡️ Hoàn phí 100% nếu không hài lòng.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== FAQ SECTION (Câu Hỏi) ===== -->
+    <section id="cau-hoi" class="bg-dark py-16 md:py-24">
+        <div class="max-w-3xl mx-auto px-4">
+
+            <div class="text-center mb-12 md:mb-16">
+                <span class="text-3xl md:text-4xl mb-4 block">❓</span>
+                <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Câu hỏi thường gặp</p>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight">
+                    Có Thắc Mắc? Đọc Ở Đây
+                </h2>
+            </div>
+
+            <div class="space-y-3">
+
+                <div class="faq-item bg-dark-card rounded-xl cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-5 md:p-6">
+                        <span class="font-semibold text-white text-sm md:text-base pr-4">Tỉ lệ thành công là bao nhiêu %?</span>
+                        <span class="faq-icon text-primary text-xl flex-shrink-0">▾</span>
+                    </div>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-muted text-sm md:text-base leading-relaxed">
+                            90% – một con số không tưởng đúng không? Nhưng 17 mùa, hơn 500 học viên thì đây là điều mà tất cả mọi người đã làm được.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-dark-card rounded-xl cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-5 md:p-6">
+                        <span class="font-semibold text-white text-sm md:text-base pr-4">Thời gian học như thế nào?</span>
+                        <span class="faq-icon text-primary text-xl flex-shrink-0">▾</span>
+                    </div>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-muted text-sm md:text-base leading-relaxed">
+                            Mỗi ngày ít nhất 30 phút và tuỳ vào thời gian rảnh của mọi người. Ai nhiều thời gian học nhiều, ít học ít. Không giới hạn.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-dark-card rounded-xl cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-5 md:p-6">
+                        <span class="font-semibold text-white text-sm md:text-base pr-4">Nếu mình học chậm hơn mọi người thì sao?</span>
+                        <span class="faq-icon text-primary text-xl flex-shrink-0">▾</span>
+                    </div>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-muted text-sm md:text-base leading-relaxed">
+                            Không sao cả, đó là chuyện rất bình thường. Mỗi người có một hành trình riêng, bạn học chậm cũng không sao, miễn là bạn không dừng lại.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-dark-card rounded-xl cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-5 md:p-6">
+                        <span class="font-semibold text-white text-sm md:text-base pr-4">Sau hành trình mình muốn tiếp tục thì sao?</span>
+                        <span class="faq-icon text-primary text-xl flex-shrink-0">▾</span>
+                    </div>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-muted text-sm md:text-base leading-relaxed">
+                            Sau hành trình bạn đã hiểu rõ cách học và phương pháp để áp dụng cho mọi tài liệu ngoài kia rồi. Nhưng nếu bạn muốn đi tiếp thì sẽ có hành trình tiếp theo cho bạn nhé.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-dark-card rounded-xl cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-5 md:p-6">
+                        <span class="font-semibold text-white text-sm md:text-base pr-4">Mình từng học nhiều khóa rồi bỏ giữa chừng, khóa này khác gì?</span>
+                        <span class="faq-icon text-primary text-xl flex-shrink-0">▾</span>
+                    </div>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-muted text-sm md:text-base leading-relaxed">
+                            Khác là bạn học phương pháp bạn chưa từng được thử và được nghe trước đây, khác xa hoàn toàn cách bạn từng học. Khác ở chỗ nữa là bạn không học một mình. Có nhóm đồng hành nhắc nhau mỗi ngày, có người hướng dẫn theo sát, và phương pháp học nhẹ nhàng qua tài liệu thú vị nên bạn không bị chán mà bỏ cuộc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-dark-card rounded-xl cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-5 md:p-6">
+                        <span class="font-semibold text-white text-sm md:text-base pr-4">Nếu không phù hợp thì sao?</span>
+                        <span class="faq-icon text-primary text-xl flex-shrink-0">▾</span>
+                    </div>
+                    <div class="faq-answer px-5 md:px-6 pb-5 md:pb-6">
+                        <p class="text-muted text-sm md:text-base leading-relaxed">
+                            Cam kết hoàn phí 100% nếu bạn cảm thấy không phù hợp. Không hỏi lý do, không làm khó. Bạn hoàn toàn yên tâm khi đăng ký, không có rủi ro gì.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== FINAL CTA — 2 CON ĐƯỜNG ===== -->
+    <section class="bg-dark py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-4">
+
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight">
+                    Bạn Có <span class="text-gradient-fire">2 Lựa Chọn</span> Ngay Lúc Này
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
+
+                <!-- Con đường 1: Bỏ qua -->
+                <div class="bg-dark-card border border-dark-soft rounded-2xl p-6 md:p-8 relative opacity-70">
+                    <div class="absolute -top-3 left-4 bg-dark-soft text-muted text-xs font-bold px-3 py-1 rounded-full">CON ĐƯỜNG 1</div>
+                    <div class="text-center mb-5">
+                        <span class="text-4xl">😔</span>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-4 text-center">Đóng trang này lại.</h3>
+                    <ul class="space-y-3 text-muted text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary mt-0.5">✗</span>
+                            <span>Tiếp tục sợ tiếng Anh thêm vài năm nữa</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary mt-0.5">✗</span>
+                            <span>Gặp người nước ngoài vẫn đứng hình, muốn trốn</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary mt-0.5">✗</span>
+                            <span>Mất thêm hàng triệu cho các khóa học nhàm chán rồi lại bỏ</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary mt-0.5">✗</span>
+                            <span>Bỏ lỡ cơ hội thăng tiến, du lịch, kết nối vì rào cản ngôn ngữ</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary mt-0.5">✗</span>
+                            <span>1 năm sau vẫn ở chỗ cũ, tự hỏi "giá mình bắt đầu sớm hơn..."</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Con đường 2: Tham gia -->
+                <div class="bg-dark-card border-2 border-secondary/40 rounded-2xl p-6 md:p-8 relative shadow-lg shadow-secondary/10">
+                    <div class="absolute -top-3 left-4 bg-secondary text-dark text-xs font-bold px-3 py-1 rounded-full">CON ĐƯỜNG 2</div>
+                    <div class="text-center mb-5">
+                        <span class="text-4xl">🌟</span>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-white mb-4 text-center">Tham gia thử thách 15 ngày.</h3>
+                    <ul class="space-y-3 text-light text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5">✓</span>
+                            <span>15 ngày nữa, bạn đọc được <strong class="text-white">100+ trang tiếng Anh</strong> mà không cần từ điển</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5">✓</span>
+                            <span>Nghe hiểu nội dung đơn giản, tự tin nói <strong class="text-white">"Ủa, mình hiểu rồi nè!"</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5">✓</span>
+                            <span>Có thói quen học mỗi ngày mà <strong class="text-white">không cần ép bản thân</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5">✓</span>
+                            <span>Hết ghét tiếng Anh. Bắt đầu <strong class="text-white">yêu lại</strong> và tin mình sẽ chinh phục được</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary mt-0.5">✓</span>
+                            <span>Chỉ 249K. Rẻ hơn 1 ly trà sữa mỗi ngày. <strong class="text-white">Hoàn phí 100%</strong> nếu không phù hợp</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 text-center">
+                        <a href="#form-dang-ky" class="btn-cta inline-block text-dark font-bold text-base md:text-lg px-10 md:px-14 py-3.5 md:py-4 rounded-full pulse-glow">
+                            THAM GIA NGAY →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- P.S. -->
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-muted text-sm italic leading-relaxed max-w-lg mx-auto">
+                    P.S. Bạn đã đọc đến đây, nghĩa là bạn thật sự muốn thay đổi. Đừng để nỗi sợ quen thuộc giữ bạn lại thêm một ngày nào nữa. 15 ngày từ bây giờ, bạn sẽ nhìn lại và tự hỏi: "Sao mình không bắt đầu sớm hơn?"
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-gray-400 py-8">
+        <div class="max-w-5xl mx-auto px-4 text-center text-sm">
+            <p class="mb-2">© 2026 Yêu Lại Tiếng Anh. All rights reserved.</p>
+            <p class="text-xs text-gray-500">Cam kết hoàn phí 100% nếu không hài lòng.</p>
+        </div>
+    </footer>
+
+
+    <!-- ===== MOBILE BOTTOM CTA (visible on mobile when scrolling) ===== -->
+    <div id="mobile-cta" class="fixed bottom-0 left-0 right-0 bg-dark border-t border-dark-soft p-3 md:hidden z-50 hidden">
+        <a href="#form-dang-ky" class="btn-cta block text-center text-dark font-bold text-base py-3.5 rounded-full">
+            THAM GIA NGAY – 249K →
+        </a>
+    </div>
+
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // Countdown Timer - Deadline: July 10, 2026 08:00:00
+        function startCountdown() {
+            const deadline = new Date('2026-07-10T08:00:00+07:00').getTime();
+
+            function update() {
+                const now = new Date().getTime();
+                const distance = deadline - now;
+
+                if (distance < 0) {
+                    document.getElementById('countdown-days').textContent = '00';
+                    document.getElementById('countdown-hours').textContent = '00';
+                    document.getElementById('countdown-minutes').textContent = '00';
+                    document.getElementById('countdown-seconds').textContent = '00';
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('countdown-days').textContent = String(days).padStart(2, '0');
+                document.getElementById('countdown-hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('countdown-minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('countdown-seconds').textContent = String(seconds).padStart(2, '0');
+            }
+
+            update();
+            setInterval(update, 1000);
+        }
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const allItems = document.querySelectorAll('.faq-item');
+            allItems.forEach(item => {
+                if (item !== element) {
+                    item.classList.remove('active');
+                }
+            });
+            element.classList.toggle('active');
+        }
+
+        // Mobile bottom CTA - show after scrolling past hero
+        function handleMobileCta() {
+            const mobileCta = document.getElementById('mobile-cta');
+            const scrollY = window.scrollY;
+
+            if (scrollY > 600) {
+                mobileCta.classList.remove('hidden');
+            } else {
+                mobileCta.classList.add('hidden');
+            }
+        }
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const offset = 70;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ===== COPY TRANSFER CONTENT =====
+        function copyTransferContent() {
+            const text = document.getElementById('transfer-content').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = event.target;
+                btn.textContent = 'Copied!';
+                setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
+            });
+        }
+
+        // ===== FORM SUBMISSION → SHEET + QR =====
+        const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxLQcKMxC7fdT83V1vbLusX7wqYj6G6u4M8-UsPEhUa2fesB3t8067Rw31xFjYkOQWmPA/exec';
+
+        document.getElementById('registration-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const successDiv = document.getElementById('form-success');
+            const errorDiv = document.getElementById('form-error');
+            const nguonChecked = [...form.querySelectorAll('input[name="nguon"]:checked')].map(cb => cb.value);
+
+            const data = {
+                hoTen: form.querySelector('[name="hoTen"]').value,
+                sdt: form.querySelector('[name="sdt"]').value,
+                facebook: form.querySelector('[name="facebook"]').value,
+                mucTieu: form.querySelector('[name="mucTieu"]').value,
+                trinhDo: form.querySelector('[name="trinhDo"]').value,
+                nguon: nguonChecked.join(', ')
+            };
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Đang gửi...';
+            errorDiv.classList.add('hidden');
+
+            // Gửi Sheet ngay (trạng thái: Chờ thanh toán)
+            try {
+                await fetch(GOOGLE_SHEET_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+            } catch(err) {}
+
+            // Generate VietQR
+            const hoTen = data.hoTen.replace(/\s+/g, ' ').trim();
+            const sdt4 = data.sdt.replace(/\D/g, '').slice(-4);
+            const transferNote = 'YLTA ' + hoTen + ' ' + sdt4;
+            document.getElementById('qr-payment').src = 'https://img.vietqr.io/image/BIDV-8847768931-compact2.png?amount=249000&addInfo=' + encodeURIComponent(transferNote) + '&accountName=LE%20THI%20DUNG';
+            document.getElementById('transfer-content').textContent = transferNote;
+
+            // Show QR + hướng dẫn CK
+            successDiv.classList.remove('hidden');
+            successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            submitBtn.textContent = '✅ Đã ghi nhận! Vui lòng chuyển khoản bên dưới.';
+            submitBtn.classList.add('opacity-50');
+            form.querySelectorAll('input, textarea').forEach(el => el.disabled = true);
+        });
+
+        // Initialize
+        startCountdown();
+        window.addEventListener('scroll', handleMobileCta);
+    </script>
+
+</body>
+</html>
